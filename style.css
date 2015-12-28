@@ -1,0 +1,45 @@
+body
+{
+	font-family:  "Helvetica Neue";
+}
+
+h1
+{	text-align: center;
+	font-size: 50px;	
+}
+
+td
+{
+	color: #58ACFA;
+}
+
+span
+{
+	color: #A9E2F3;
+}
+
+a:-webkit-any-link
+{
+	text-decoration:none !important;
+	color: #58ACFA;
+}
+
+a:hover { 
+    color: #A9E2F3;
+}
+
+img
+{
+	color: #58ACFA;
+	width: 30px;
+	height: 30px;
+	margin: 0px 10px;
+}
+
+#textBody
+{
+	padding-right: 400px;
+	padding-left: 400px;
+	text-align: left;
+	color: #BDBDBD;
+}
