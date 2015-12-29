@@ -1,17 +1,17 @@
 body
 {
+	width: 99%;
 	font-family:  "Helvetica Neue";
 }
 
 h1
-{	text-align: center;
+{
+	margin: 0 auto 0 auto;
+	position: relative;
+	text-align: center;
 	font-size: 50px;	
 }
 
-td
-{
-	color: #58ACFA;
-}
 
 span
 {
@@ -28,6 +28,13 @@ a:hover {
     color: #A9E2F3;
 }
 
+#iconHome img
+{
+	width: 50px;
+	height: 50px;
+	opacity: 0;
+}
+
 img
 {
 	color: #58ACFA;
@@ -36,10 +43,16 @@ img
 	margin: 0px 10px;
 }
 
+tr
+{
+	margin-left: auto;
+	margin-right: auto;
+	display: inline-table;
+}
+
 #textBody
 {
-	padding-right: 400px;
-	padding-left: 400px;
+	width: 25em;
 	text-align: left;
 	color: #BDBDBD;
 }
