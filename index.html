@@ -1,5 +1,6 @@
 
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<link rel="shortcut icon" type="image/png" href="icons/favicon.png">
@@ -55,10 +56,13 @@
 				<script>
 					$(document).ready(function()
 					{
-						$(function()
+						setTimeout(function()
 						{
-							$('#iconHome img').delay(600).animate({opacity: 1.0}, 400);
-						});
+
+							$(function()
+							{
+								$('#iconHome img').delay(600).animate({opacity: 1.0}, 400);
+							});
 					//for first name
 					var showFirst = function (target, message, index, interval) {    
 						if (index >= 0) { 
@@ -102,8 +106,8 @@
 					}); 
 					
 
-
-				});
+				}, 300);
+});
 </script>
 
 </body>
