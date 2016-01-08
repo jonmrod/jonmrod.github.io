@@ -1,0 +1,101 @@
+
+html
+{
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family:  "Helvetica Neue", "Helvetica", "Sans-Serif";
+}
+button#newGame {
+    font-size: 20px;
+    border: 0;
+    background-color: #c4f1fe;
+    color: white;
+    padding: 10px 20px;
+    position: relative;
+    top: -55px;
+    left: 36%;
+}
+
+h1 {
+    text-align: center;
+}
+
+p[action="gameOver"] {
+    display: none;
+}
+
+#wrapAround {
+    padding-top: 5%;
+    width: 100px;
+    clear: both;
+    padding-left: 20%;
+}
+
+#rounds {
+    text-align: center;
+    display: none;
+    padding-right: 20%;
+    padding-top: 29%;
+}
+#lost {
+    text-align: center;
+    display: none;
+    padding-right: 20%;
+    padding-top: 29%;
+}
+
+.options {
+    float: right;
+    padding-right: 20%;
+}
+
+.circle {
+    position: static;
+    opacity: 0.4;
+}
+.circle.turnOn {
+    opacity: 1;
+}
+
+.red,
+.blue,
+.orange,
+.green {
+    height: 40%;
+    border-radius: 150px 150px 150px 150px;
+    position: absolute;
+}
+
+.red {
+    background: red;
+    clip: rect(0px, 300px, 140px, 160px);
+    width: 300px;
+}
+
+.blue {
+    background: blue;
+    clip: rect(0px, 140px, 140px, 0px);
+    width: 300px;
+}
+
+.orange {
+    background: orange;
+    clip: rect(160px, 140px, 300px, 0px);
+    width: 300px;
+}
+
+.green {
+    background: darkgreen;
+    clip: rect(160px, 300px, 300px, 160px);
+    width: 300px;
+}
+
+.circle.lit {
+    opacity: 1;
+}
+
+.circle:hover {
+    box-shadow: 2px 2px .9em black;
+}
+
