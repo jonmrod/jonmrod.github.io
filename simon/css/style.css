@@ -99,3 +99,9 @@ p[action="gameOver"] {
     box-shadow: 2px 2px .9em black;
 }
 
+footer {
+    position: absolute;
+    bottom: 10%;
+    width: 80%;
+    text-align: center;
+}
