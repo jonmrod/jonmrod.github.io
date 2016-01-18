@@ -2,6 +2,7 @@
 html
 {
     width: 960px;
+    height: 400px;
     margin-left: auto;
     margin-right: auto;
     font-family:  "Helvetica Neue", "Helvetica", "Sans-Serif";
@@ -51,7 +52,7 @@ p[action="gameOver"] {
 }
 
 .circle {
-    position: static;
+    position: absolute;
     opacity: 0.4;
 }
 .circle.turnOn {
@@ -62,7 +63,7 @@ p[action="gameOver"] {
 .blue,
 .orange,
 .green {
-    height: 40%;
+    height: 300px;
     border-radius: 150px 150px 150px 150px;
     position: absolute;
 }
