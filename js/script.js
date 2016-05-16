@@ -22,7 +22,12 @@ $(document).ready(function() {
         }, 800);
         //hr line
         setTimeout(function() {
-            $('hr').animate({width: '50%', opacity: 1})
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+                $('hr').animate({width: '90%', opacity: 1});
+            }
+            else {
+                $('hr').animate({width: '50%', opacity: 1});
+            }
         }, 900);
         //delay background
         setTimeout(function() {
