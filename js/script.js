@@ -16,18 +16,18 @@ $(document).ready(function() {
         setTimeout(function() {
             $('#textBody p').animate({'font-size': '-=2pt', opacity: 1});
         }, 700);
+        //link images
+        setTimeout(function() {
+            $('#images img').animate({width: '-=5px', height: '-=5px', opacity: 1})
+        }, 800);
         //hr line
         setTimeout(function() {
             $('hr').animate({width: '50%', opacity: 1})
-        }, 800);
+        }, 900);
         //delay background
         setTimeout(function() {
             $('html').css("background-image", "url('./icons/bg.png')");
         }, 2000);
-        //link images
-        setTimeout(function() {
-            $('#images img').animate({width: '25px', height: '25px', opacity: 1})
-        }, 900);
 
 
     }, 500);
