@@ -1,103 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
+    <!-- favicon -->
     <link rel="shortcut icon" type="image/png" href="icons/favicon.png">
     <title>Jonathan Rodriguez</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- css and js -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <script src="js/script.js"></script>
 </head>
 
 <body>
-    <table align="center">
-        <tr>
-            <td>
-                <h1>
-					<div id="firstName"></div>
-                </h1>
-            </td>
-            <td>
-                <div id="iconHome">
-                    <img src="icons/iconHome.png">
-                </div>
-            </td>
-            <td>
-                <h1>
-						<div id="lastName"></div>
-                </h1>
-            </td>
-            <td>
-                <h1>
-						<span></span>
-					</h1>
-            </td>
-        </tr>
-    </table>
+    <div id="boy"></div>
     <center>
-        <hr width="50%">
-        <div id="textBody">
-            Hi! I'm Jonathan. Please enjoy my refreshingly minimal web page.
+        <table align="center">
+            <div id="section1">
+                <img src="icons/iconHome.png">
+            </div>
             <p>
-                I am a 3rd year undergraduate at Kean University, studying Computer Science.
-                <p>
-                    NSF Computer Science S-STEM scholarship recipient at Kean University.
-                    <p>
-                        My interests include databases, paradigms, programming languages and web development.
-                        <p>
-                            I am a self-taught developer, and constantly learning new skills. At the moment, I am teaching myself Objective-C to implement iOS apps.
-                            <p>
+        </table>
+        <div id="textBody">
+            <strong>
+            Hi. I'm Jonathan. Enjoy my refreshingly minimal web page.
+            <p>
+            My interests include databases, paradigms, programming languages and web development.
+            </strong>
         </div>
+        <hr>
         <p>
-            <a target="_blank" href="http://github.com/jonmrod"><img src="icons/github.png"></a>
-            <a target="_blank" href="http://linkedin.com/in/jonrodriguez1"><img src="icons/linkedin.png"></a>
-            <a target="_blank" href="mailto:jonathanrodriguez224@gmail.com"><img src="icons/email.png"></a>
-            <script>
-            $(document).ready(function() {
-                setTimeout(function() {
-
-                    $(function() {
-                        $('#iconHome img').delay(600).animate({
-                            opacity: 1.0
-                        }, 400);
-                    });
-                    //for first name
-                    var showFirst = function(target, message, index, interval) {
-                        if (index >= 0) {
-                            $(target).prepend(message[index--]);
-                            setTimeout(function() {
-                                showFirst(target, message, index, interval);
-                            }, interval);
-                        }
-                    }
-
-                    $(function() {
-                        var word = "jonathan";
-                        var lengthWord = word.length;
-
-                        showFirst("#firstName", word, lengthWord, 50);
-                    });
-                    //for last name
-                    var showLast = function(target, message, index, interval) {
-                        if (index < message.length) {
-                            $(target).append(message[index++]);
-                            setTimeout(function() {
-                                showLast(target, message, index, interval);
-                            }, interval);
-                        } else {
-                            $('span').append('.');
-                        }
-                    }
-                    $(function() {
-                        var word = "rodriguez";
-                        var lengthWord = word.length;
-
-                        showLast("#lastName", word, 0, 50);
-                    });
-                }, 300);
-            });
-            </script>
+            <div id="images">
+                <a target="_blank" href="http://github.com/jonmrod"><img src="icons/github.png"></a>
+                <a target="_blank" href="http://linkedin.com/in/jonrodriguez1"><img src="icons/linkedin.png"></a>
+                <a target="_blank" href="mailto:jonathanrodriguez224@gmail.com"><img src="icons/email.png"></a>
+            </div>
 </body>
 
 </html>
+
+
