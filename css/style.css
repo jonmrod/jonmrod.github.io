@@ -1,14 +1,15 @@
-@import url("https://fonts.googleapis.com/css?family=Quicksand");
+@import url("https://fonts.googleapis.com/css?family=Inconsolata");
 
 html {
-	font-family: 'Quicksand', "Helvetica Neue", "Helvetica";
+	display: inline;
+	font-family: 'Inconsolata', "Helvetica Neue", "Helvetica";
 	background-color: #2A2D3C;
-	font-size: 14pt;
+	font-size: 16pt;
 	-ms-transition: background-image 1s linear;
     -o-transition: background-image 1s linear;
     -moz-transition: background-image 1s linear;
     -webkit-transition: background-image 1s linear;
-    transition: background-image 1s linear;
+    transition: background-image 2s linear;
 	background-image: url('../icons/bg1.png');
 }
 body {
@@ -20,8 +21,10 @@ body {
 	width: 50px;
 	height: 50px;
 	opacity: 0;
+	padding-bottom: 4%;
 }
 hr {
+	margin: 2em auto;
 	width: 0%;
 	opacity: 1;
 	border: 0; 
@@ -29,23 +32,35 @@ hr {
 	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), 
 	rgba(255, 255, 255, 1), rgba(0, 0, 0, 0)); 
 }
-a:-webkit-any-link {
-	text-decoration:none !important;
-}
 #images img {
-	width: 30px;
-	height: 30px;
+	padding: 10px;
+	width: 1.85em;
+	height: 1.85em;
 	margin: 0px 10px;
+	line-height: 2em;
+	display: inline-block;
 	opacity: 0;
+	border: 0;
+
+}
+#images img:hover {
+	background-color: grey;
+	border-radius: 3px;
+	opacity: 0.5;
+	overflow: hidden;
+	transition: background-color 0.2s linear;
 }
 #textBody {
+	letter-spacing: 2px;
 	padding-left: 10px;
+	padding-right: 10px;
 	text-align: center;
 	color: white;
 	opacity: 0;
 }
 #textBody p {
-	font-size: 14pt;
+	padding: 1%;
+	font-size: 16pt;
 	text-align: center;
 	color: white;
 	opacity: 0;
