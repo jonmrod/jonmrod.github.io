@@ -18,10 +18,17 @@ $(document).ready(function() {
         }, 700);
         //link images
         setTimeout(function() {
-            $('#images img').animate({width: '-=5px', height: '-=5px', opacity: 1})
+              //if mobile
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+                $('#images img').animate({width: '-=15px', height: '-=15px', opacity: 1})
+            }
+            else {
+                $('#images img').animate({width: '-=5px', height: '-=5px', opacity: 1})
+            }
         }, 800);
         //hr line
         setTimeout(function() {
+            //if mobile
             if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
                 $('hr').animate({width: '90%', opacity: 1});
             }
