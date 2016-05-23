@@ -1,7 +1,8 @@
-@import url("https://fonts.googleapis.com/css?family=Inconsolata");
+@import url("https://fonts.googleapis.com/css?family=Inconsolata|Pacifico");
 
 html {
 	display: inline;
+	color: white;
 	font-family: 'Inconsolata', "Helvetica Neue", "Helvetica";
 	background-color: #2A2D3C;
 	font-size: 16pt;
@@ -38,27 +39,32 @@ hr {
 	margin: 0px 5px;
 	opacity: 0;
 	border: 0;
-
 }
-#images img:hover {
+#images img:hover, #link:hover {
 	background-color: grey;
 	border-radius: 3px;
 	opacity: 0.5;
-	overflow: hidden;
 	transition: background-color 0.2s linear;
+}
+#link, #link a {
+	color: inherit;
+	text-decoration: none !important;
+	font-family: 'Pacifico';
+	opacity: 0;
+    width: 115px;
+    height: 60px;
+	font-size: 20pt;
 }
 #textBody {
 	letter-spacing: 2px;
 	padding-left: 10px;
 	padding-right: 10px;
 	text-align: center;
-	color: white;
 	opacity: 0;
 }
 #textBody p {
 	padding: 1%;
 	font-size: 16pt;
 	text-align: center;
-	color: white;
 	opacity: 0;
 }
