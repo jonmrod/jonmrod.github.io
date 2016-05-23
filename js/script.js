@@ -36,10 +36,20 @@ $(document).ready(function() {
                 $('hr').animate({width: '50%', opacity: 1});
             }
         }, 900);
+        //hr line
+        setTimeout(function() {
+            //if mobile
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+                $('#link').animate({'font-size': '-=10pt', opacity: 1});
+            }
+            else {
+                $('#link').animate({'font-size': '-=5pt', opacity: 1});
+            }
+        }, 1000);
         //delay background
         setTimeout(function() {
             $('html').css("background-image", "url('./icons/bg.png')");
-        }, 2000);
+        }, 1100);
 
 
     }, 500);
