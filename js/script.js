@@ -1,3 +1,6 @@
+var host = "jonrodriguez.me";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
 $(document).ready(function() {
     //mouse movement
     $('html').mousemove(function(e){
