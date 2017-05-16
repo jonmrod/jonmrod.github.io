@@ -81,7 +81,6 @@ function press(articles) {
 (function () {
   window.addEventListener('load', function() {
     highlights();
-    // pressVars();
     expandGroups('click');
     expandGroups('touchend');
   }, false);
