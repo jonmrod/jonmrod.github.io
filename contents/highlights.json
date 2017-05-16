@@ -1,0 +1,49 @@
+{
+  "data": [
+    {
+      "type": "job",
+      "date": "June 2017",
+      "description": {
+        "what": "Joined full time at",
+        "emphasis": "Vanguard",
+        "info": "Joined after graduation as a java developer."
+      }
+    },  
+    {
+      "type": "fun",
+      "date": "May 2017",
+      "description": {
+        "what": "Moved to",
+        "emphasis": "Pennsylvania",
+        "info": "Big country baby!"
+      }
+    },
+    {
+      "type": "job",
+      "date": "May 2017",
+      "description": {
+        "what": "Graduated from",
+        "emphasis": "Kean University",
+        "info": "Graduated with a B.S. in Computer Science. Go Cougars!"
+      }
+    },
+    {
+      "type": "event",
+      "date": "April 2017",
+      "description": {
+        "what": "Organized",
+        "emphasis": "HackKean III",
+        "info": "Lead organizer of Kean University's third annual hackathon."
+      }
+    },
+    {
+      "type": "job",
+      "date": "Summer 2016",
+      "description": {
+        "what": "Interned at",
+        "emphasis": "Aventr",
+        "info": "Joined founding team as a Software Engineer working on the front end of <a href='https://www.aventr.com/happster'>Happster</a>"
+      }
+    } 
+  ]
+}
